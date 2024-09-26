@@ -1,4 +1,7 @@
-{ "version": 2, "rewrites": [{ "source": "/(.*)", "destination": "/api" }], "headers": [
+{
+  "version": 2,
+  "rewrites": [{ "source": "/(.*)", "destination": "/api" }],
+  "headers": [
     {
       "source": "/api/(.*)",
       "headers": [
@@ -8,4 +11,5 @@
         }
       ]
     }
-  ] }
+  ]
+}

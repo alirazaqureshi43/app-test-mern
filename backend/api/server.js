@@ -14,7 +14,9 @@ app.use(cors({ origin: 'http://localhost:3000',credentials: true, methods:["GET"
 mongoose.connect('mongodb+srv://test:test@test.uhsus.mongodb.net/?retryWrites=true&w=majority&appName=Test').then(()=>{
     console.log('Mongodb connected')
 })
-
+app.get('/', (req,res)=>{
+    res.json('Hello')
+})
 app.use('/users', userRoutes)
 app.use('/apps', appRoutes)
 

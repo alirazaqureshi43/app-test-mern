@@ -1,0 +1,11 @@
+.friend{
+    border: 1px solid #333;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+.appList{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 1rem;
+}

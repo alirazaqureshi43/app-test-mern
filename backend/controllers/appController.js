@@ -1,5 +1,5 @@
  const App = require('../models/appModel.js')
-
+const User = require('../models/userModel.js')
  const createApp = async(req, res)=>{
     const {name, subscriptionDate,expiryDate,subscriptionAmount, type, creator} = req.body
     const userExist = await User.findById(creator)

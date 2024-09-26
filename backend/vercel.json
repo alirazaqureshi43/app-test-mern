@@ -1,0 +1,11 @@
+{ "version": 2, "rewrites": [{ "source": "/(.*)", "destination": "/api" }], "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "http://localhost:3000"
+        }
+      ]
+    }
+  ] }
